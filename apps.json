@@ -2,25 +2,25 @@
     {
         "name": "JSON Formatter",
         "description": "A tool to format and validate JSON data.",
-        "url": "https://sabharee97.github.io/json-formatter-app",
+        "url": "https://json.tools.sabharees.in/",
         "isEnabled": true
     },
     {
         "name": "Password Generator",
         "description": "Generate secure passwords.",
-        "url": "https://sabharee97.github.io/password-generator/",
+        "url": "https://pass-gen.tools.sabharees.in/",
         "isEnabled": true
     },
     {
         "name": "IP Address Lookup",
         "description": "Get geolocation data based on an IP address.",
         "url": "https://sabharee97.github.io/ip-lookup/",
-        "isEnabled": true
+        "isEnabled": false
     },
     {
         "name": "Calculator App",
         "description": "Simple calculator on web.",
         "url": "https://sabharee97.github.io/calculator-app/",
-        "isEnabled": true
+        "isEnabled": false
     }
 ]
