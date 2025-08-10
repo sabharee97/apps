@@ -1,7 +1,10 @@
+/* Base Styles */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #121212;  /* Dark background */
-    color: #f0f0f0;  /* Light gray text */
+    font-family: 'Courier New', monospace;
+    background-color: #000000;
+    /* Full black background */
+    color: #ccff00;
+    /* Neon green text */
     margin: 0;
     padding: 0;
     display: flex;
@@ -11,62 +14,73 @@ body {
     position: relative;
 }
 
+/* Container */
 .container {
     max-width: 900px;
     width: 100%;
     padding: 20px;
-    background-color: #1e1e1e;  /* Slightly lighter dark background */
+    background-color: transparent;
+    border: 1px solid #ccff00;
     border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 25px #ccff00;
 }
 
+/* Heading */
 h1 {
     text-align: center;
     margin-bottom: 30px;
     font-size: 2.5rem;
-    letter-spacing: 1px;
-    color: #ffffff;  /* Pure white for the heading */
+    letter-spacing: 2px;
+    color: #ccff00;
     text-transform: uppercase;
 }
 
+/* App List Grid */
 .app-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
+/* Individual App Tiles */
 .app-tile {
-    background-color: #2c2c2c;  /* Dark gray for app tiles */
+    background-color: #111111;
     padding: 20px;
+    border: 1px solid #333;
     border-radius: 15px;
     text-align: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 15px rgba(204, 255, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .app-tile:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 20px rgba(204, 255, 0, 0.5);
 }
 
+/* Tile Heading */
 .app-tile h2 {
     font-size: 1.5rem;
     margin-bottom: 15px;
-    color: #ffffff;
+    color: #ccff00;
 }
 
+/* Tile Description */
 .app-tile p {
     font-size: 1rem;
     margin-bottom: 20px;
-    color: #d0d0d0;  /* Lighter gray for description text */
+    color: #b6ff00;
+    /* Slightly dimmer neon green */
 }
 
+/* Button Group Layout */
 .button-group {
     display: flex;
     justify-content: space-between;
     gap: 10px;
 }
 
+/* Buttons */
 .button-group a {
     flex: 1;
     padding: 10px;
@@ -74,39 +88,30 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
     text-decoration: none;
     font-size: 1.5rem;
-    color: #ffffff;  /* White for icons */
+    color: #000000;
+    background-color: #ccff00;
+    font-weight: bold;
+}
+
+.button-group a:hover {
+    background-color: #e5ff4a;
+    transform: scale(1.05);
 }
 
 .arrow {
     display: inline-block;
 }
 
-.button-group a.open-same {
-    background-color: #444444;  /* Dark gray for button */
-}
-
-.button-group a.open-same:hover {
-    background-color: #555555;  /* Slightly lighter on hover */
-}
-
-.button-group a.open-new {
-    background-color: #444444;  /* Matching dark gray */
-}
-
-.button-group a.open-new:hover {
-    background-color: #555555;  /* Slightly lighter on hover */
-}
-
-/* Footer text styling */
+/* Footer */
 .footer-text {
     position: fixed;
-    bottom: 10px;  /* Adjusted to be at the bottom of the page */
-    right: 10px;   /* Adjusted to be at the right of the page */
-    font-size: 0.75rem;  /* Small text size */
-    color: #888888;  /* Subtle gray color */
+    bottom: 10px;
+    right: 10px;
+    font-size: 0.75rem;
+    color: #888888;
     font-style: italic;
     opacity: 0.7;
 }
