@@ -6,6 +6,12 @@
         "isEnabled": true
     },
     {
+        "name": "Tick Counter",
+        "description": "App to set time counter.",
+        "url": "https://tickcounter.tools.sabharees.in/",
+        "isEnabled": true
+    },
+    {
         "name": "Password Generator",
         "description": "Generate secure passwords.",
         "url": "https://pass-gen.tools.sabharees.in/",
